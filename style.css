@@ -11,6 +11,42 @@ body {
   margin-right: auto;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
+
+#todo-list {
+  font-size: 1.2em;
+}
+
+#create {
+  background: none;
+  border: none;
+}
+
 .delete {
   margin-right: 5px;
+  margin-bottom: 5px;
+  background: none;
+  border: 1px solid red;
+  color: red;
+}
+
+.delete:hover {
+  color: white;
+  background-color: red;
+}
+
+input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+.filtered-div {
+  margin-top: 10px;
+}
+
+.filtered-div button {
+  background: none;
 }

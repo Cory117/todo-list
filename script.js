@@ -26,7 +26,7 @@ $(document).ready(function(){
             if (!task.completed) {
               activeTasks++;
             }
-            $('#todo-list').append('<div class="row"><p class="col-xs-8">' + task.content + '</p><button class="delete" data-id="' + task.id + '">Delete</button><input type="checkbox" class="mark-complete" data-id="' + task.id + '"' + (task.completed ? 'checked' : '') + '>');
+            $('#todo-list').append('<div class="row"><p class="col-xs-6">' + task.content + '</p><button class="btn btn-outline-danger delete" data-id="' + task.id + '">Delete</button><input type="checkbox" class="mark-complete" data-id="' + task.id + '"' + (task.completed ? 'checked' : '') + '>');
           });
           $('.to-do-amount').text(activeTasks.length);
           console.log(activeTasks);
